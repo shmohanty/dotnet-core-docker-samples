@@ -8,4 +8,4 @@
 * Stop Container: `docker stop [container name]`
 * Remove Container: `docker rm [container name]`
 * List all containers: `docker ps -a`
-* 
+* List all running containers: `docker ps`
