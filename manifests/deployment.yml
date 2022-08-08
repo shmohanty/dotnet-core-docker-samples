@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: shmohantydotnetcoredockersamples 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shmohantydotnetcoredockersamples
+  template:
+    metadata:
+      labels:
+        app: shmohantydotnetcoredockersamples 
+    spec:
+      containers:
+        - name: shmohantydotnetcoredockersamples 
+          image: testingx22.azurecr.io/shmohantydotnetcoredockersamples
+          ports:
+          - containerPort: 80
