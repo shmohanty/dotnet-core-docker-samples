@@ -18,9 +18,9 @@ stages:
   - job: Build
     displayName: Build
     pool:
-   name: Default
-   demands: 
-   - Agent.Name -equals selfhostedagent
+     name: Default
+     demands: 
+      - Agent.Name -equals selfhostedagent
 
     steps:
     - task: Docker@2
